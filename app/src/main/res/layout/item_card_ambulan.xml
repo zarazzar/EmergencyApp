@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:layout_margin="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/iv_foto_ambulan"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            />
+        <TextView
+            android:id="@+id/tv_ambulan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambulan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/iv_foto_ambulan"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_tentang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Ambulan"
+            android:layout_toRightOf="@id/iv_foto_ambulan"
+            android:layout_below="@id/tv_ambulan"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
