@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/iv_grid"
+        android:scaleType="centerCrop"
+        android:background="#A19E9E"
+        android:layout_margin="6dp"/>
+
+</LinearLayout>
