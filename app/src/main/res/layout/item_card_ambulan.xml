@@ -32,7 +32,7 @@
             android:layout_toRightOf="@id/iv_foto_ambulan"
             android:layout_below="@id/tv_ambulan"
             android:ellipsize="end"
-            android:maxLines="3"
+            android:maxLines="2"
             android:layout_marginLeft="10dp"/>
 
     </RelativeLayout>
