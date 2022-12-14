@@ -6,10 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
+    <ImageView
+        android:id="@+id/iv_damkar"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/logo_damkar"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="55dp"
+        />
+    <ImageView
+        android:id="@+id/iv_ambulan"
+        android:layout_toRightOf="@+id/iv_damkar"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/logo_ambulan"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="55dp"
+        />
+
     <TextView
+        android:id="@+id/tv_damkar"
+        android:layout_below="@+id/iv_damkar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-       android:layout_centerInParent="true" />
+        android:text="Pemadam Kebakaran"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_below="@+id/iv_ambulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambulance/UGD"
+        android:layout_toRightOf="@id/tv_damkar"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="60sp"
+
+        />
+
 
 </RelativeLayout>
