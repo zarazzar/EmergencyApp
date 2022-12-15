@@ -7,30 +7,31 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="6dp">
+        android:padding="6dp"
+        >
 
         <ImageView
-            android:id="@+id/iv_foto_ambulan"
+            android:id="@+id/iv_fotoAmbulan"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@mipmap/ic_launcher"
             />
         <TextView
-            android:id="@+id/tv_ambulan"
+            android:id="@+id/tv_namaAmbulan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ambulan"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_toRightOf="@id/iv_foto_ambulan"
+            android:layout_toRightOf="@id/iv_fotoAmbulan"
             android:layout_marginLeft="10dp"/>
         <TextView
-            android:id="@+id/tv_tentang"
+            android:id="@+id/tv_alamatAmbulan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tentang Ambulan"
-            android:layout_toRightOf="@id/iv_foto_ambulan"
-            android:layout_below="@id/tv_ambulan"
+            android:text="Alamat Ambulan"
+            android:layout_toRightOf="@id/iv_fotoAmbulan"
+            android:layout_below="@id/tv_namaAmbulan"
             android:ellipsize="end"
             android:maxLines="2"
             android:layout_marginLeft="10dp"/>

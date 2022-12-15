@@ -13,13 +13,13 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/iv_foto_damkar"
+            android:id="@+id/iv_foto_ambulan"
             android:src="@mipmap/ic_launcher"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_nama_damkar"
+            android:id="@+id/tv_nama_ambulan"
             android:layout_margin="6dp"
             style="@style/TextAppearance.AppCompat.Large"
             android:text="Nama"/>
@@ -27,14 +27,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="lokasi"
-            android:id="@+id/tv_lokasi_damkar"
+            android:text="alamat"
+            android:id="@+id/tv_alamat_ambulan"
             android:justificationMode="inter_word"
             android:layout_margin="6dp"
             style="@style/TextAppearance.AppCompat.Large"/>
 
         <Button
-            android:id="@+id/btn_hubungi"
+            android:id="@+id/btn_hubungiAmbulan"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button"
@@ -48,7 +48,7 @@
             />
 
         <Button
-            android:id="@+id/btn_lokasi"
+            android:id="@+id/btn_lokasiAmbulan"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button1"
