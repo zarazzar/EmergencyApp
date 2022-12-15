@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".detail">
+    tools:context=".DetailActivityUGD">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,30 +11,30 @@
         android:layout_margin="6dp"
         android:orientation="vertical">
         <ImageView
+            android:id="@+id/iv_fotoUGD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/iv_foto_ambulan"
             android:src="@mipmap/ic_launcher"/>
 
         <TextView
+            android:id="@+id/tv_namaUGD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_nama_ambulan"
             android:layout_margin="6dp"
             style="@style/TextAppearance.AppCompat.Large"
             android:text="Nama"/>
 
         <TextView
+            android:id="@+id/tv_alamatUGD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="alamat"
-            android:id="@+id/tv_alamat_ambulan"
             android:justificationMode="inter_word"
             android:layout_margin="6dp"
             style="@style/TextAppearance.AppCompat.Large"/>
 
         <Button
-            android:id="@+id/btn_hubungiAmbulan"
+            android:id="@+id/btn_hubungiUGD"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button"
@@ -48,7 +48,7 @@
             />
 
         <Button
-            android:id="@+id/btn_lokasiAmbulan"
+            android:id="@+id/btn_lokasiUGD"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button1"

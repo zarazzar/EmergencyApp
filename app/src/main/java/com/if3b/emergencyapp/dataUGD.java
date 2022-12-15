@@ -1,6 +1,6 @@
 package com.if3b.emergencyapp;
 
-public class dataAmbulance {
+public class dataUGD {
     public static String[][] data = new String[][]{
             //nama  ,alamat, no telp, urlLokasi, , foto.
             {"UGD RS Bhayangkara Palembang", "Jl. Jend Sudirman No.Km. 4, RW.5, Ario Kemining, Kec.Kemuning, Palembang, Sumatera Selatan", "0711410023","https://drive.google.com/file/d/1VR9EXVsOhmRwZ_utGnCboL6zgzf0t-q6/view?usp=drivesdk"},
