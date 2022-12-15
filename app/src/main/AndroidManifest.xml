@@ -16,6 +16,20 @@
         android:theme="@style/Theme.EmergencyApp"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivityUGD"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivityDamkar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".DetailActivityUGD"
             android:exported="false">
             <meta-data
