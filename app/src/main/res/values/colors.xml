@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--Nambahi warno baru-->
+
+    <color name="gradient0">#ffe259</color>
+    <color name="gradient1">#ffa751</color>
+    <color name="gradient2">#74C1FF</color>
+    <color name="gradient3">#1497FF</color>
+
 </resources>

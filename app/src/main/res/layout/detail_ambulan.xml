@@ -27,17 +27,39 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="tentang"
-            android:id="@+id/tv_tentang_ambulan"
+            android:text="lokasi"
+            android:id="@+id/tv_lokasi_ambulan"
             android:justificationMode="inter_word"
             android:layout_margin="6dp"
             style="@style/TextAppearance.AppCompat.Large"/>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Lokasi"
-            android:id="@+id/btn_damkar"/>
+            android:id="@+id/btn_hubungiAmbulan"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:text="TELEPON "
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/icon_telepon"
+            android:paddingLeft="16dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_lokasiAmbulan"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button1"
+            android:text=" LIHAT LOKASI "
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/icon_lokasiputih"
+            android:paddingLeft="16dp"
+            />
 
 
 
