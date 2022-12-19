@@ -7,7 +7,7 @@
     tools:context=".MainActivityDamkar">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tv_damkar"
+        android:id="@+id/rv_damkar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/item_card_damkar"
