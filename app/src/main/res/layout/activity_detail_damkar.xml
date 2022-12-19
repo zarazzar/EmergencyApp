@@ -34,7 +34,7 @@
             style="@style/TextAppearance.AppCompat.Large"/>
 
         <Button
-            android:id="@+id/btn_hubungi"
+            android:id="@+id/btn_hubungi_damkar"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button"
@@ -48,7 +48,7 @@
             />
 
         <Button
-            android:id="@+id/btn_lokasi"
+            android:id="@+id/btn_lokasi_damkar"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button1"
