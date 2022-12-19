@@ -14,11 +14,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class AdaptercardUGD  extends  RecyclerView.Adapter<AdaptercardUGD.classviewholder>{
-private ArrayList<ModelUGD> modelUGD;
+private ArrayList<ModelUGD> dataUGD;
 
 
     public AdaptercardUGD(ArrayList<ModelUGD> modelUGD) {
-        this.modelUGD = modelUGD;
+        this.dataUGD = modelUGD;
     }
 
     @NonNull
@@ -30,12 +30,14 @@ private ArrayList<ModelUGD> modelUGD;
 
     @Override
     public void onBindViewHolder(@NonNull classviewholder holder, int position) {
-
+        ModelUGD ugd =dataUGD.get(position);
+        holder.tvalamatUGD.setText(ugd.getAlamat());
+        holder.tvnamaUGD.setText(ugd.getNama());
     }
 
     @Override
     public int getItemCount() {
-        return modelUGD.size();
+        return dataUGD.size();
     }
 
     public  class classviewholder extends RecyclerView.ViewHolder{
