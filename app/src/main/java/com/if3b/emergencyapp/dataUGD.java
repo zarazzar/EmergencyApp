@@ -1,5 +1,7 @@
 package com.if3b.emergencyapp;
 
+import java.util.ArrayList;
+
 public class dataUGD {
     public static String[][] data = new String[][]{
             //nama  ,alamat, no telp, urlLokasi, , foto.
@@ -25,4 +27,19 @@ public class dataUGD {
 
             {"IGD RSIA Az-Zahra Palembang", "Jalan Brigadir jenderal Hasan Khasim Nomor 1-2 Kelurahan, Bukit Sangkal, Kec. Kalidoni, Kota Palembang, Sumatera Selatan 30114", "07113038799","https://maps.app.goo.gl/WmVyEXyFtFvqVZkr9","https://drive.google.com/file/d/1VxLJAZjQrF8Gp3Vvlx05V34KQEYXBT-8/view?usp=drivesdk"},
     };
+   public static ArrayList<ModelUGD> ambilDataUGD(){
+       ArrayList<ModelUGD> dataUGD = new ArrayList<>();
+       for (String[] varData : data){
+           ModelUGD modelugd = new ModelUGD();
+           modelugd.setNama(varData[0]);
+           modelugd.setAlamat(varData[1]);
+           modelugd.setNoTelp(varData[2]);
+           modelugd.setUrlLokasi(varData[3]);
+           modelugd.setFoto(varData[4]);
+
+           dataUGD.add(modelugd);
+       }
+       return dataUGD;
+   }
+
 }

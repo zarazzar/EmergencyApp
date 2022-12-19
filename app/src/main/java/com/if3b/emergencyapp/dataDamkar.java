@@ -1,5 +1,7 @@
 package com.if3b.emergencyapp;
 
+import java.util.ArrayList;
+
 public class dataDamkar {
     public static String[][] data = new String[][]{
             //nama  ,alamat, no telp, urlLokasi, , foto.
@@ -19,5 +21,21 @@ public class dataDamkar {
 
 
     };
+
+    public static ArrayList<ModelDamkar> ambilDataDamkar(){
+        ArrayList<ModelDamkar> dataDamkar = new ArrayList<>();
+        for (String[] varData : data){
+            ModelDamkar modeldamkar = new ModelDamkar();
+            modeldamkar.setNama(varData[0]);
+            modeldamkar.setAlamat(varData[1]);
+            modeldamkar.setNoTelp(varData[2]);
+            modeldamkar.setUrlLokasi(varData[3]);
+            modeldamkar.setFoto(varData[4]);
+
+            dataDamkar.add(modeldamkar);
+        }
+        return dataDamkar;
+    }
+
 
 }
