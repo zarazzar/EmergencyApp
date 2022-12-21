@@ -2,34 +2,34 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:elevation="8dp">
+    android:layout_margin="6dp"
+    android:elevation="6dp">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="6dp">
 
     <ImageView
-        android:id="@+id/iv_fotoDamkar"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:id="@+id/iv_foto_damkar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:src="@mipmap/ic_launcher"/>
     <TextView
-        android:id="@+id/tv_namaDamkar"
+        android:id="@+id/tv_nama_damkar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama Damkar"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_toRightOf="@+id/iv_fotoDamkar"
+        android:layout_toRightOf="@+id/iv_foto_damkar"
         android:layout_marginLeft="10dp"/>
     <TextView
-        android:id="@+id/tv_alamatDamkar"
+        android:id="@+id/tv_alamat_damkar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="alamat Damkar"
-        android:layout_toRightOf="@+id/iv_fotoDamkar"
-        android:layout_below="@id/tv_namaDamkar"
+        android:layout_toRightOf="@+id/iv_foto_damkar"
+        android:layout_below="@id/tv_nama_damkar"
         android:ellipsize="end"
         android:maxLines="2"
         android:layout_marginLeft="10dp"/>

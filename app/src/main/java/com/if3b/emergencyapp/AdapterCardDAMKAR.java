@@ -1,5 +1,6 @@
 package com.if3b.emergencyapp;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,17 +9,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.DamkarViewHolder>{
     private ArrayList<ModelDamkar>dataDamkar;
+    private Context ctx;
+
 
     public AdapterCardDAMKAR(ArrayList<ModelDamkar> dataDamkar) {
         this.dataDamkar = dataDamkar;
     }
+
+
+
 
     @NonNull
     @Override
@@ -29,6 +34,10 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
 
     @Override
     public void onBindViewHolder(@NonNull DamkarViewHolder holder, int position) {
+        ModelDamkar damkar = dataDamkar.get(position);
+
+        holder.tvNamaDamkar.setText(damkar.getNama());;
+        holder.tvAlamatDamkar.setText(damkar.getAlamat());
 
     }
 

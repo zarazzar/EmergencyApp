@@ -10,8 +10,7 @@ import java.util.ArrayList;
 
 public class MainActivityDamkar extends AppCompatActivity {
 
-    private RecyclerView rvDamkar;
-    private ArrayList<ModelDamkar> data = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +18,7 @@ public class MainActivityDamkar extends AppCompatActivity {
         getSupportActionBar().setTitle("PEMADAM KEBAKARAN");
         setContentView(R.layout.activity_main_damkar);
 
-        rvDamkar = findViewById(R.id.rv_damkar);
-        rvDamkar.setHasFixedSize(true);
-
-        data.addAll(dataDamkar.ambilDataDamkar());
     }
 
-    private void tampilDataCardDamkar(){
-        rvDamkar.setLayoutManager(new LinearLayoutManager(this));
-    }
+
 }
