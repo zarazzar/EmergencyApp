@@ -17,13 +17,10 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
     private ArrayList<ModelDamkar>dataDamkar;
     private Context ctx;
 
-
     public AdapterCardDAMKAR(ArrayList<ModelDamkar> dataDamkar) {
         this.dataDamkar = dataDamkar;
+        this.ctx = ctx;
     }
-
-
-
 
     @NonNull
     @Override
@@ -41,6 +38,7 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
 
     }
 
+
     @Override
     public int getItemCount() {
         return dataDamkar.size();
@@ -56,8 +54,8 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
             ivFotoDamkar = itemView.findViewById(R.id.iv_foto_damkar);
             tvNamaDamkar = itemView.findViewById(R.id.tv_nama_damkar);
             tvAlamatDamkar = itemView.findViewById(R.id.tv_alamat_damkar);
-            btnHubungi = itemView.findViewById(R.id.btn_hubungi_damkar);
-            btnLokasi = itemView.findViewById(R.id.btn_hubungi_damkar);
+            //btnHubungi = itemView.findViewById(R.id.btn_hubungi_damkar);
+            //btnLokasi = itemView.findViewById(R.id.btn_hubungi_damkar);
         }
     }
 }

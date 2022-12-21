@@ -3,7 +3,6 @@ package com.if3b.emergencyapp;
 public class ModelDamkar {
     private String nama  ,alamat, noTelp, urlLokasi, foto;
 
-
     public String getNama() {
         return nama;
     }

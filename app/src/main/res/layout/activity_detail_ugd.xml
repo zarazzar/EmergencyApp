@@ -11,13 +11,13 @@
         android:layout_margin="6dp"
         android:orientation="vertical">
         <ImageView
-            android:id="@+id/iv_foto_UGD"
+            android:id="@+id/iv_foto_ugd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_launcher"/>
 
         <TextView
-            android:id="@+id/tv_nama_UGD"
+            android:id="@+id/tv_nama_ugd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
@@ -25,7 +25,7 @@
             android:text="Nama"/>
 
         <TextView
-            android:id="@+id/tv_alamat_UGD"
+            android:id="@+id/tv_alamat_ugd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="alamat"
@@ -34,7 +34,7 @@
             style="@style/TextAppearance.AppCompat.Large"/>
 
         <Button
-            android:id="@+id/btn_hubungi_UGD"
+            android:id="@+id/btn_hubungi_ugd"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button"
@@ -48,7 +48,7 @@
             />
 
         <Button
-            android:id="@+id/btn_lokasi_UGD"
+            android:id="@+id/btn_lokasi_ugd"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button1"

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class dataUGD {
     public static String[][] data = new String[][]{
             //nama  ,alamat, no telp, urlLokasi, , foto.
-            {"UGD RS Bhayangkara Palembang", "Jl. Jend Sudirman No.Km. 4, RW.5, Ario Kemining, Kec.Kemuning, Palembang, Sumatera Selatan", "0711410023","https://drive.google.com/file/d/1VR9EXVsOhmRwZ_utGnCboL6zgzf0t-q6/view?usp=drivesdk"},
+            {"UGD RS Bhayangkara Palembang", "Jl. Jend Sudirman No.Km. 4, RW.5, Ario Kemining, Kec.Kemuning, Palembang, Sumatera Selatan", "0711410023","https://goo.gl/maps/VyQJVFt7L4LgzRtS6","https://drive.google.com/file/d/1VR9EXVsOhmRwZ_utGnCboL6zgzf0t-q6/view?usp=drivesdk"},
 
             {"IGD RSU Bunda Palembang", "Jl. Demang Lebar Daun Ilir Barat I, Palembang Sumatera Selatan", "119", "https://maps.app.goo.gl/rRFTBMbr8MRoEYdB8","https://drive.google.com/file/d/1VSF8VAjGyzyJTdi9nTHmThEQ6OVoIr8N/view?usp=drivesdk"},
 

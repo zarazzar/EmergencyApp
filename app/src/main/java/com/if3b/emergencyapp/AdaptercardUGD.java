@@ -17,22 +17,21 @@ public class AdaptercardUGD  extends  RecyclerView.Adapter<AdaptercardUGD.classv
     private ArrayList<ModelUGD> dataUGD;
     private Context ctx;
 
-    public AdaptercardUGD(ArrayList<ModelUGD> dataUGD, Context ctx) {
+    public AdaptercardUGD(ArrayList<ModelUGD> dataUGD) {
         this.dataUGD = dataUGD;
+        this.ctx = ctx;
     }
-
-
 
     @NonNull
     @Override
     public classviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_card_ugd,parent,false);
-        return new classviewholder(view);
+        View viewUGD = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_card_ugd,parent,false);
+        return new classviewholder(viewUGD);
     }
 
     @Override
     public void onBindViewHolder(@NonNull classviewholder holder, int position) {
-        ModelUGD ugd =dataUGD.get(position);
+        ModelUGD ugd = dataUGD.get(position);
         holder.tvnamaUGD.setText(ugd.getNama());
         holder.tvalamatUGD.setText(ugd.getAlamat());
 
@@ -50,11 +49,11 @@ public class AdaptercardUGD  extends  RecyclerView.Adapter<AdaptercardUGD.classv
 
         public classviewholder(@NonNull View itemView) {
             super(itemView);
-            ivfotoUGD= itemView.findViewById(R.id.iv_foto_UGD);
-            tvalamatUGD= itemView.findViewById(R.id.tv_alamat_UGD);
-            tvnamaUGD= itemView.findViewById(R.id.tv_nama_UGD);
-            btnhubungiUGD= itemView.findViewById(R.id.btn_hubungi_UGD);
-            btnlokasiUGD=itemView.findViewById(R.id.btn_lokasi_UGD);
+            ivfotoUGD= itemView.findViewById(R.id.iv_foto_ugd);
+            tvnamaUGD= itemView.findViewById(R.id.tv_nama_ugd);
+            tvalamatUGD= itemView.findViewById(R.id.tv_alamat_ugd);
+            //btnhubungiUGD= itemView.findViewById(R.id.btn_hubungi_ugd);
+            //btnlokasiUGD=itemView.findViewById(R.id.btn_lokasi_ugd);
         }
     }
 
