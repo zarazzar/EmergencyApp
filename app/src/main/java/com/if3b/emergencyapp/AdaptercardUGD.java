@@ -52,8 +52,15 @@ public class AdaptercardUGD  extends  RecyclerView.Adapter<AdaptercardUGD.classv
             ivfotoUGD= itemView.findViewById(R.id.iv_foto_ugd);
             tvnamaUGD= itemView.findViewById(R.id.tv_nama_ugd);
             tvalamatUGD= itemView.findViewById(R.id.tv_alamat_ugd);
-            //btnhubungiUGD= itemView.findViewById(R.id.btn_hubungi_ugd);
-            //btnlokasiUGD=itemView.findViewById(R.id.btn_lokasi_ugd);
+//            btnhubungiUGD= itemView.findViewById(R.id.btn_hubungi_ugd);
+//            btnlokasiUGD=itemView.findViewById(R.id.btn_lokasi_ugd);
+//
+//            btnlokasiUGD.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    btnlokasiUGD=view.findViewById()
+//                }
+//            });
         }
     }
 
