@@ -1,6 +1,7 @@
 package com.if3b.emergencyapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -33,8 +36,14 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
     public void onBindViewHolder(@NonNull DamkarViewHolder holder, int position) {
         ModelDamkar damkar = dataDamkar.get(position);
 
-        holder.tvNamaDamkar.setText(damkar.getNama());;
+        holder.tvNamaDamkar.setText(damkar.getNama());
         holder.tvAlamatDamkar.setText(damkar.getAlamat());
+
+        Glide
+                .with(holder.itemView.getContext())
+                .load(damkar.getFoto())
+                .placeholder(R.drawable.ic_baseline_image_24)
+                .into(holder.ivFotoDamkar);
 
     }
 
@@ -48,7 +57,7 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
     {
         ImageView ivFotoDamkar;
         TextView tvNamaDamkar,tvAlamatDamkar;
-        Button btnHubungi, btnLokasi;
+        //Button btnHubungi, btnLokasi;
         public DamkarViewHolder(@NonNull View itemView) {
             super(itemView);
             ivFotoDamkar = itemView.findViewById(R.id.iv_foto_damkar);

@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class dataDamkar {
     public static String[][] data = new String[][]{
             //nama  ,alamat, no telp, urlLokasi, , foto.
-            {"DAMKAR Jakarta Fire And Disaster Management Palembang", "Jl. Merdeka No.8, 19 Ilir, Kec. Bukit Kecil, Kota Palembang, Sumatera Selatan 30113", "0711312011","https://maps.app.goo.gl/eJAZbGsg2f3SdJpWA","https://drive.google.com/file/d/1Vz7ItWVIRwyUroUsgj2qn1eFOXISUQaY/view?usp=drivesdk"},
+            {"DAMKAR Jakarta Fire And Disaster Management Palembang", "Jl. Merdeka No.8, 19 Ilir, Kec. Bukit Kecil, Kota Palembang, Sumatera Selatan 30113", "0711312011","https://maps.app.goo.gl/eJAZbGsg2f3SdJpWA","https://1.bp.blogspot.com/fOTU1wI8btr5ARwuDnVPYTl5CTTEOqMKHaZIIapcLtBsGZiwD3Mmq3GIvbEsg0r1qcJafVVsu13hXUs=s320"},
 
-            {"DAMKAR Talang Keramat Kenten Palembang", "Jl. Talang Keramat, Kebun Bunga, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30961", "07115712333","https://maps.app.goo.gl/mN9XL7yo4uGwiHJu5","https://drive.google.com/file/d/1VzD_U9Brbcwp95PCDlCkCAfBDJj0oAiZ/view?usp=drivesdk"},
+            {"DAMKAR Talang Keramat Kenten Palembang", "Jl. Talang Keramat, Kebun Bunga, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30961", "07115712333","https://maps.app.goo.gl/mN9XL7yo4uGwiHJu5","https://pidjar.com/wp-content/uploads/2019/12/truk-damkar.jpg"},
 
             {"DAMKAR Sako Sematang Borang Palembang", "Kec. Sako, Kota Palembang, Sumatera Selatan 30961", "0711822532","https://maps.app.goo.gl/gJBehUjZr2qoGdjb6","https://drive.google.com/file/d/1Vzxli0eFTsm1YnJbLxmPLRqdPWRQF5rO/view?usp=drivesdk"},
 
