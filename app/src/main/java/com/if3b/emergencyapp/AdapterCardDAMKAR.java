@@ -20,7 +20,7 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
     private ArrayList<ModelDamkar>dataDamkar;
     private Context ctx;
 
-    public AdapterCardDAMKAR(ArrayList<ModelDamkar> dataDamkar) {
+    public AdapterCardDAMKAR(ArrayList<ModelDamkar> dataDamkar, Context ctx) {
         this.dataDamkar = dataDamkar;
         this.ctx = ctx;
     }
@@ -45,6 +45,30 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
                 .placeholder(R.drawable.ic_baseline_image_24)
                 .into(holder.ivFotoDamkar);
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String xNamaDamkar, xAlamatDamkar,xFotoDamkar,
+                        xLokasiDamkar ,xNomorDamkar;
+
+                xNamaDamkar = damkar.getNama();
+                xAlamatDamkar= damkar.getAlamat();
+                xFotoDamkar= damkar.getFoto();
+                xLokasiDamkar = damkar.getUrlLokasi();
+//                xNomorDamkar =damkar.getNoTelp();
+
+                Intent Kirim = new Intent(ctx, DetailActivityDamkar.class);
+                Kirim.putExtra("xNamaDamkar",xNamaDamkar);
+                Kirim.putExtra("xAlamatDamkar",xAlamatDamkar);
+                Kirim.putExtra("xFotoDamkar",xFotoDamkar);
+                Kirim.putExtra("xLokasiDamkar",xLokasiDamkar);
+//                Kirim.putExtra("xNomorDamkar",xNomorDamkar);
+
+                ctx.startActivity(Kirim);
+
+            }
+        });
+
     }
 
 
@@ -58,7 +82,7 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
         ImageView ivFotoDamkar;
         TextView tvNamaDamkar,tvAlamatDamkar;
         Button btnHubungi, btnLokasi;
-        String getlokasiDamkar;
+        //String getlokasiDamkar;
 
         public DamkarViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -68,19 +92,6 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
             btnHubungi = itemView.findViewById(R.id.btn_hubungi_damkar);
             btnLokasi = itemView.findViewById(R.id.btn_hubungi_damkar);
 
-            btnLokasi.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                   getlokasiDamkar=tvAlamatDamkar.getText().toString();
-
-                    Uri location = Uri.parse("geo:0,0?q=" + getlokasiDamkar);
-                    Intent bukaLokasi = new Intent(Intent.ACTION_VIEW, location);
-                    ctx.startActivity(bukaLokasi);
-                }
-
-
-
-            });
         }
     }
 }

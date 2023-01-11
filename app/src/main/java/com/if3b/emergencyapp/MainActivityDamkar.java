@@ -30,7 +30,7 @@ public class MainActivityDamkar extends AppCompatActivity {
 
     private void tampilDataDamkar(){
         rvDamkar.setLayoutManager(new LinearLayoutManager(this));
-        AdapterCardDAMKAR varAdapterDamkar = new AdapterCardDAMKAR(data);
+        AdapterCardDAMKAR varAdapterDamkar = new AdapterCardDAMKAR(data, MainActivityDamkar.this);
         rvDamkar.setAdapter(varAdapterDamkar);
     }
 

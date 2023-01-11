@@ -30,7 +30,7 @@ public class MainActivityUGD extends AppCompatActivity {
     }
     private void tampilDataUGD(){
         rvUGD.setLayoutManager(new LinearLayoutManager(this));
-        AdaptercardUGD varAdapterUGD = new AdaptercardUGD(data);
+        AdaptercardUGD varAdapterUGD = new AdaptercardUGD(data, MainActivityUGD.this);
         rvUGD.setAdapter(varAdapterUGD);
 
 
