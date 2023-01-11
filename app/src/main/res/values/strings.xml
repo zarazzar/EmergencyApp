@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EmergencyApp</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

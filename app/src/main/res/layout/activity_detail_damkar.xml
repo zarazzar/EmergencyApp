@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_nama_damkar"
             android:layout_margin="6dp"
-            style="@style/TextAppearance.AppCompat.Large"
+            style="@style/TextAppearance.AppCompat.Display1"
             android:text="Nama"/>
 
         <TextView
@@ -31,7 +31,7 @@
             android:id="@+id/tv_alamat_damkar"
             android:justificationMode="inter_word"
             android:layout_margin="6dp"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            style="@style/TextAppearance.AppCompat.Body2"/>
 
         <Button
             android:id="@+id/btn_hubungi_damkar"

@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            style="@style/TextAppearance.AppCompat.Large"
+            style="@style/TextAppearance.AppCompat.Display1"
             android:text="Nama"/>
 
         <TextView
@@ -31,7 +31,7 @@
             android:text="alamat"
             android:justificationMode="inter_word"
             android:layout_margin="6dp"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            style="@style/TextAppearance.AppCompat.Body2"/>
 
         <Button
             android:id="@+id/btn_hubungi_ugd"
