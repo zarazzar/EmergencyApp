@@ -23,20 +23,19 @@ public class DetailActivityDamkar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_damkar);
-        getSupportActionBar().setTitle("Detail DAMKAR");
 
         ivFotoDamkar = findViewById(R.id.iv_foto_damkar);
         tvNamaDamkar = findViewById(R.id.tv_nama_damkar);
         tvAlamatDamkar = findViewById(R.id.tv_alamat_damkar);
         btnLokasiDamkar = findViewById(R.id.btn_lokasi_damkar);
-//        btnHPDamkar = findViewById(R.id.btn_hubungi_damkar);
+       btnHPDamkar = findViewById(R.id.btn_hubungi_damkar);
 
         Intent GetDamkar = getIntent();
         yNamaDamkar = GetDamkar.getStringExtra("xNamaDamkar");
         yAlamatDamkar = GetDamkar.getStringExtra("xAlamatDamkar");
         yFotoDamkar = GetDamkar.getStringExtra("xFotoDamkar");
         yLokasiDamkar = GetDamkar.getStringExtra("xLokasiDamkar");
-//       yNomorDamkar = GetDamkar.getStringExtra("xNomorDamkar");
+       yNomorDamkar = GetDamkar.getStringExtra("xNomorDamkar");
 
 
 
@@ -46,24 +45,28 @@ public class DetailActivityDamkar extends AppCompatActivity {
                 .into(ivFotoDamkar);
         tvNamaDamkar.setText(yNamaDamkar);
         tvAlamatDamkar.setText(yAlamatDamkar);
-        //btnLokasiDamkar.setText(yLokasiDamkar);
-//        btnHPDamkar.setText(yNomorDamkar);
 
 
+        btnHPDamkar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri nomorDamkar = Uri.parse("tel:"+yNomorDamkar);
+                Intent Telepon = new Intent(Intent.ACTION_DIAL,nomorDamkar);
+                startActivity(Telepon);
+            }
+        });
 
         btnLokasiDamkar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Uri lokasiDamkar = Uri.parse("geo:0,0?q="+yLokasiDamkar);
-
                 Intent bukaLokasi = new Intent(Intent.ACTION_VIEW,lokasiDamkar);
                 startActivity(bukaLokasi);
 
             }
         });
 
-
-
+        getSupportActionBar().setTitle("Detail DAMKAR " + yNamaDamkar);
 
 
 

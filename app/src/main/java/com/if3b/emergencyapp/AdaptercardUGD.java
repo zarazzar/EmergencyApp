@@ -54,14 +54,14 @@ public class AdaptercardUGD  extends  RecyclerView.Adapter<AdaptercardUGD.classv
                 xAlamatUGD= ugd.getAlamat();
                 xFotoUGD= ugd.getFoto();
                 xLokasiUGD = ugd.getUrlLokasi();
-//                xNomorUGD =damkar.getNoTelp();
+                xNomorUGD =ugd.getNoTelp();
 
                 Intent Kirim = new Intent(ctx, DetailActivityUGD.class);
                 Kirim.putExtra("xNamaUGD",xNamaUGD);
                 Kirim.putExtra("xAlamatUGD",xAlamatUGD);
                 Kirim.putExtra("xFotoUGD",xFotoUGD);
                 Kirim.putExtra("xLokasiUGD",xLokasiUGD);
-//                Kirim.putExtra("xNomorUGD",xNomorUGD);
+                Kirim.putExtra("xNomorUGD",xNomorUGD);
 
                 ctx.startActivity(Kirim);
             }

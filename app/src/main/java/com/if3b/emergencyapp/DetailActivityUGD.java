@@ -23,26 +23,34 @@ public class DetailActivityUGD extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_ugd);
-        getSupportActionBar().setTitle("Detail UGD");
 
         ivFotoUGD = findViewById(R.id.iv_foto_ugd);
         tvNamaUGD = findViewById(R.id.tv_nama_ugd);
         tvAlamatUGD = findViewById(R.id.tv_alamat_ugd);
         btnLokasiUGD = findViewById(R.id.btn_lokasi_ugd);
-//        btnHPUGD = findViewById(R.id.btn_hubungi_ugd);
+        btnHPUGD = findViewById(R.id.btn_hubungi_ugd);
 
         Intent GetUGD = getIntent();
         yNamaUGD = GetUGD.getStringExtra("xNamaUGD");
         yAlamatUGD = GetUGD.getStringExtra("xAlamatUGD");
         yFotoUGD = GetUGD.getStringExtra("xFotoUGD");
         yLokasiUGD = GetUGD.getStringExtra("xLokasiUGD");
-//        yNomorUGD = GetUGD.getStringExtra("xNomorUGD");
+        yNomorUGD = GetUGD.getStringExtra("xNomorUGD");
 
         Glide
                 .with(DetailActivityUGD.this)
                 .load(yFotoUGD).into(ivFotoUGD);
         tvNamaUGD.setText(yNamaUGD);
         tvAlamatUGD.setText(yAlamatUGD);
+
+        btnHPUGD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri nomorUGD = Uri.parse("tel:"+yNomorUGD);
+                Intent Telepon = new Intent(Intent.ACTION_DIAL,nomorUGD);
+                startActivity(Telepon);
+            }
+        });
 
         btnLokasiUGD.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +63,7 @@ public class DetailActivityUGD extends AppCompatActivity {
             }
         });
 
+        getSupportActionBar().setTitle("Detail UGD "+yNamaUGD);
 
 
     }

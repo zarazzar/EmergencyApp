@@ -55,14 +55,14 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
                 xAlamatDamkar= damkar.getAlamat();
                 xFotoDamkar= damkar.getFoto();
                 xLokasiDamkar = damkar.getUrlLokasi();
-//                xNomorDamkar =damkar.getNoTelp();
+                xNomorDamkar =damkar.getNoTelp();
 
                 Intent Kirim = new Intent(ctx, DetailActivityDamkar.class);
                 Kirim.putExtra("xNamaDamkar",xNamaDamkar);
                 Kirim.putExtra("xAlamatDamkar",xAlamatDamkar);
                 Kirim.putExtra("xFotoDamkar",xFotoDamkar);
                 Kirim.putExtra("xLokasiDamkar",xLokasiDamkar);
-//                Kirim.putExtra("xNomorDamkar",xNomorDamkar);
+                Kirim.putExtra("xNomorDamkar",xNomorDamkar);
 
                 ctx.startActivity(Kirim);
 
@@ -82,7 +82,6 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
         ImageView ivFotoDamkar;
         TextView tvNamaDamkar,tvAlamatDamkar;
         Button btnHubungi, btnLokasi;
-        //String getlokasiDamkar;
 
         public DamkarViewHolder(@NonNull View itemView) {
             super(itemView);
