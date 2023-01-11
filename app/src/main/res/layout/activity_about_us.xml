@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    tools:context=".AboutUs">
+
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:id="@+id/iv_foto_azzar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/iv_foto_depniel"
+        android:background="@drawable/logo_damkar"
+
+        />
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:id="@+id/iv_foto_depniel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo_damkar"
+
+        />
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:id="@+id/iv_foto_nando"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/iv_foto_depniel"
+        android:background="@drawable/logo_damkar"
+        />
+
+
+    <TextView
+        android:id="@+id/nama_azzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azzar Rizky"
+        android:layout_below="@id/iv_foto_azzar"
+        android:layout_marginLeft="45dp"
+        />
+    <TextView
+        android:id="@+id/nama_depniel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dep'niel Sinaga"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_foto_depniel"
+        />
+    <TextView
+        android:layout_toRightOf="@id/nama_depniel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fernando"
+        android:layout_below="@id/iv_foto_nando"
+        android:layout_marginLeft="43dp"
+        />
+
+    <TextView
+        android:layout_marginTop="70sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Developer of this App"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
