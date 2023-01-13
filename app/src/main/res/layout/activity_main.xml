@@ -36,21 +36,24 @@
         <TextView
             android:id="@+id/tv_damkar"
             android:layout_below="@+id/ib_damkar"
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="Pemadam Kebakaran"
-            android:layout_marginLeft="50sp"
+            android:text="DAMKAR"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="55dp"
+            android:textAlignment="center"
+
             />
 
         <TextView
             android:layout_below="@+id/ib_ambulan"
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:text="Ambulance/UGD"
             android:layout_toRightOf="@id/tv_damkar"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="60sp"
+            android:layout_marginLeft="55dp"
+            android:textAlignment="center"
 
             />
 
