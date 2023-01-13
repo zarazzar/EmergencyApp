@@ -2,8 +2,10 @@ package com.if3b.emergencyapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -15,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
+        getSupportActionBar().setTitle("EmergencyApp");
+
+
+
 
         ibDamkar = findViewById(R.id.ib_damkar);
         ibAmbulan = findViewById(R.id.ib_ambulan);
@@ -36,5 +41,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(pindahRvUGD);
             }
         });
+
+
+
+
     }
 }
