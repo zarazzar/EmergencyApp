@@ -42,6 +42,7 @@ public class AdapterCardDAMKAR extends RecyclerView.Adapter<AdapterCardDAMKAR.Da
         Glide
                 .with(holder.itemView.getContext())
                 .load(damkar.getFoto())
+                .centerCrop()
                 .placeholder(R.drawable.ic_baseline_image_24)
                 .into(holder.ivFotoDamkar);
 

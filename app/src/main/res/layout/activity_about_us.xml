@@ -87,5 +87,16 @@
         style="@style/TextAppearance.AppCompat.Medium"
         />
 
+    <ImageView
+
+        android:id="@+id/iv_mdp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:background="@drawable/logo_mdp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_deskripsi"
+
+        />
+
 
 </RelativeLayout>

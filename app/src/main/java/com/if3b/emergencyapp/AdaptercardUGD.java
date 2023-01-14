@@ -41,6 +41,7 @@ public class AdaptercardUGD  extends  RecyclerView.Adapter<AdaptercardUGD.classv
         Glide
                 .with(holder.itemView.getContext())
                 .load(ugd.getFoto())
+                .centerCrop()
                 .placeholder(R.drawable.ic_baseline_image_24)
                 .into(holder.ivfotoUGD);
 

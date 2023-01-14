@@ -2,14 +2,16 @@ package com.if3b.emergencyapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AboutUs extends AppCompatActivity {
 
-    private ImageView ivFotoAzzar, ivFotoDepniel,ivFotoNando;
+    private ImageView ivFotoAzzar, ivFotoDepniel,ivFotoNando ,ivMdp;
     private TextView namaAzzar,namaDepniel,namaNando,tvJudulAboutUS,tvDeskripsi;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class AboutUs extends AppCompatActivity {
         ivFotoAzzar = findViewById(R.id.iv_foto_azzar);
         ivFotoDepniel = findViewById(R.id.iv_foto_depniel);
         ivFotoNando = findViewById(R.id.iv_foto_nando);
+        ivMdp= findViewById(R.id.iv_mdp);
 
         namaAzzar=findViewById(R.id.nama_azzar);
         namaDepniel=findViewById(R.id.nama_depniel);

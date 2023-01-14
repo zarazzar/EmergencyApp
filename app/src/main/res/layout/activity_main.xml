@@ -39,9 +39,12 @@
             android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:text="DAMKAR"
+            android:textStyle="bold"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="55dp"
             android:textAlignment="center"
+            android:textSize="16sp"
+
 
             />
 
@@ -50,12 +53,16 @@
             android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:text="Ambulance/UGD"
+            android:textStyle="bold"
             android:layout_toRightOf="@id/tv_damkar"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="55dp"
             android:textAlignment="center"
+            android:textSize="16sp"
 
             />
+
+
 
 
     </RelativeLayout>
